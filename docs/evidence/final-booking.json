@@ -1,0 +1,236 @@
+{
+  "id": "773cb4ae-637b-4c62-9ad4-dce6bcc47b0c",
+  "brief": "I run a small barbershop with three barbers. Customers need to book online, choose a barber, and avoid double bookings. Staff must block lunch breaks. One developer has a weekend. Payments and SMS reminders are undecided and we have no budget for paid messaging. Please keep the MVP small.",
+  "status": "completed",
+  "phase": "completed",
+  "model": "home-chat",
+  "startedAt": "2026-10-30T09:33:12.957Z",
+  "events": [
+    {
+      "id": "198c2ba6-5e26-4d55-889a-593527ad2f29",
+      "at": "2026-10-30T09:33:12.958Z",
+      "type": "brief.submitted",
+      "message": "Brief published to all three agents; independent drafts begin concurrently."
+    },
+    {
+      "id": "9df3d023-0989-4bd1-997e-91f16ef2a8f9",
+      "at": "2026-10-30T09:33:12.958Z",
+      "type": "agent.started",
+      "message": "Product Analyst started an independent draft.",
+      "agentId": "product"
+    },
+    {
+      "id": "63991f24-e3fd-4382-8f7b-aad297ca42b6",
+      "at": "2026-10-30T09:33:12.959Z",
+      "type": "agent.started",
+      "message": "QA Critic started an independent draft.",
+      "agentId": "qa"
+    },
+    {
+      "id": "c6ad5143-5ff5-43b9-a79c-cfd9dec29e1a",
+      "at": "2026-10-30T09:33:12.959Z",
+      "type": "agent.started",
+      "message": "Technical Planner started an independent draft.",
+      "agentId": "architect"
+    },
+    {
+      "id": "a5a6c30a-b418-45ff-904b-01dd51250096",
+      "at": "2026-10-30T09:33:12.959Z",
+      "type": "inference.started",
+      "message": "Product Analyst model request started.",
+      "agentId": "product",
+      "loopId": "283c08b5-9c4b-480b-a21b-8e622ff0c2ad"
+    },
+    {
+      "id": "e03c3473-92c9-400a-9dad-cc998de7a399",
+      "at": "2026-10-30T09:33:12.96Z",
+      "type": "inference.started",
+      "message": "QA Critic model request started.",
+      "agentId": "qa",
+      "loopId": "4fd7dd6a-a3fb-404f-aa63-234274c26916"
+    },
+    {
+      "id": "1b3503f6-e67c-4acd-bb6e-323636323b16",
+      "at": "2026-10-30T09:33:12.962Z",
+      "type": "inference.started",
+      "message": "Technical Planner model request started.",
+      "agentId": "architect",
+      "loopId": "e56642eb-818e-4bbf-ac11-f9eab8bf03ea"
+    },
+    {
+      "id": "d6bba02b-0f16-4ba1-b086-0e5312e3b59a",
+      "at": "2026-10-30T09:34:36.841Z",
+      "type": "inference.completed",
+      "message": "QA Critic model request completed.",
+      "agentId": "qa",
+      "loopId": "4fd7dd6a-a3fb-404f-aa63-234274c26916"
+    },
+    {
+      "id": "0d11244d-c3d1-467d-a3d5-7aa1321b34bc",
+      "at": "2026-10-30T09:34:36.841Z",
+      "type": "model.answer",
+      "message": "QA Critic completed draft.",
+      "agentId": "qa",
+      "loopId": "4fd7dd6a-a3fb-404f-aa63-234274c26916"
+    },
+    {
+      "id": "4c655029-2d19-425d-8c02-361214dcac2c",
+      "at": "2026-10-30T09:35:00.976Z",
+      "type": "inference.completed",
+      "message": "Technical Planner model request completed.",
+      "agentId": "architect",
+      "loopId": "e56642eb-818e-4bbf-ac11-f9eab8bf03ea"
+    },
+    {
+      "id": "5c644dd9-93bd-4683-b7e1-0311ab61cd40",
+      "at": "2026-10-30T09:35:00.976Z",
+      "type": "model.answer",
+      "message": "Technical Planner completed draft.",
+      "agentId": "architect",
+      "loopId": "e56642eb-818e-4bbf-ac11-f9eab8bf03ea"
+    },
+    {
+      "id": "f6fb892c-257d-44dc-9389-c07e1c5af133",
+      "at": "2026-10-30T09:35:24.799Z",
+      "type": "inference.completed",
+      "message": "Product Analyst model request completed.",
+      "agentId": "product",
+      "loopId": "283c08b5-9c4b-480b-a21b-8e622ff0c2ad"
+    },
+    {
+      "id": "2ecb40a7-dc92-4946-8437-b753d6f80276",
+      "at": "2026-10-30T09:35:24.799Z",
+      "type": "model.answer",
+      "message": "Product Analyst completed draft.",
+      "agentId": "product",
+      "loopId": "283c08b5-9c4b-480b-a21b-8e622ff0c2ad"
+    },
+    {
+      "id": "09b753d3-4d6a-4fe1-b4a5-4f1eef240158",
+      "at": "2026-10-30T09:35:24.799Z",
+      "type": "agent.started",
+      "message": "QA Critic started the cross-agent review.",
+      "agentId": "qa"
+    },
+    {
+      "id": "f164e2d8-c26c-4bb9-8650-c94bdf212461",
+      "at": "2026-10-30T09:35:24.8Z",
+      "type": "inference.started",
+      "message": "QA Critic model request started.",
+      "agentId": "qa",
+      "loopId": "dacd6a6d-a7ca-46a5-9e7a-fb6d7bdf3b89"
+    },
+    {
+      "id": "30ca07f7-9eb0-4199-a947-1e78128b5f9a",
+      "at": "2026-10-30T09:36:21.64Z",
+      "type": "inference.completed",
+      "message": "QA Critic model request completed.",
+      "agentId": "qa",
+      "loopId": "dacd6a6d-a7ca-46a5-9e7a-fb6d7bdf3b89"
+    },
+    {
+      "id": "e3098966-6321-40bf-aac5-b41e41a7cbf9",
+      "at": "2026-10-30T09:36:21.64Z",
+      "type": "model.answer",
+      "message": "QA Critic completed review.",
+      "agentId": "qa",
+      "loopId": "dacd6a6d-a7ca-46a5-9e7a-fb6d7bdf3b89"
+    },
+    {
+      "id": "99dd6daa-c50b-4136-be32-10d3da81a652",
+      "at": "2026-10-30T09:36:21.64Z",
+      "type": "agent.started",
+      "message": "Product Analyst started the revised specification.",
+      "agentId": "product"
+    },
+    {
+      "id": "6c28a433-c583-4660-be5e-3e2d1b2f999d",
+      "at": "2026-10-30T09:36:21.641Z",
+      "type": "inference.started",
+      "message": "Product Analyst model request started.",
+      "agentId": "product",
+      "loopId": "7bedcff8-6933-46cd-9341-ddeb1bb6f833"
+    },
+    {
+      "id": "94131b6a-78f1-44b6-b52b-561fcd8736a1",
+      "at": "2026-10-30T09:37:33.304Z",
+      "type": "inference.completed",
+      "message": "Product Analyst model request completed.",
+      "agentId": "product",
+      "loopId": "7bedcff8-6933-46cd-9341-ddeb1bb6f833"
+    },
+    {
+      "id": "cc3fc564-3ee0-4850-bc50-0255b159850f",
+      "at": "2026-10-30T09:37:33.304Z",
+      "type": "model.answer",
+      "message": "Product Analyst completed final.",
+      "agentId": "product",
+      "loopId": "7bedcff8-6933-46cd-9341-ddeb1bb6f833"
+    },
+    {
+      "id": "997b1d6c-90b3-41aa-96e9-ed4bdf54be91",
+      "at": "2026-10-30T09:37:33.304Z",
+      "type": "run.completed",
+      "message": "Final specification ready. Original drafts and review remain available for inspection."
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "40ff787c-55fe-4d48-8447-8ab567926e4f",
+      "stage": "draft",
+      "agentId": "qa",
+      "content": "# Spec Rescue: Initial Draft Critique\n\n## USER FACTS\n*   **Scale:** 3 barbers, 1 developer (1 weekend availability).\n*   **Core Flow:** Online booking, barber selection, double-booking prevention.\n*   **Staffing:** Staff must block lunch breaks.\n*   **Constraints:** No budget for paid messaging; MVP must remain small.\n\n## PROPOSALS & ASSUMPTIONS\n*   **Assumption:** \"Online\" implies a public-facing web interface accessible via mobile browsers.\n*   **Assumption:** \"Avoid double bookings\" requires real-time database constraints or optimistic locking.\n*   **Assumption:** \"Small MVP\" excludes complex features like loyalty programs, advanced analytics, or API integrations with external calendars.\n*   **Provisional Recommendation:** Use a simple web form + backend database (e.g., PostgreSQL) rather than a heavy SaaS platform to control costs and complexity.\n\n## AMBIGUOUS REQUIREMENTS\n1.  **\"Choose a barber\":** Does the customer see all available barbers simultaneously, or do they book a generic slot and get assigned? *Contradiction Risk:* If customers must choose a specific barber, the UI complexity increases significantly for a 1-weekend MVP.\n2.  **\"Block lunch breaks\":** Who blocks them? Do barbers self-serve via an admin panel, or does the owner manually set fixed times? *Assumption:* Fixed times are likely intended, but not explicit.\n3.  **\"Online\":** Is this a standalone website, or embedded in an existing social media page? No domain/hosting details provided.\n\n## FAILURE CASES\n1.  **Race Condition:** Two customers book the same slot for the same barber simultaneously. *Mitigation:* Database unique constraint on `(barber_id, start_time)`.\n2.  **Lunch Overlap:** A barbers' lunch break overlaps with a customer’s booked slot due to manual error. *Mitigation:* Validation logic preventing booking within blocked hours.\n3.  **No-Show:** Customer books but doesn’t show up. *Current Gap:* No cancellation policy or deposit mechanism defined.\n\n## PRIVACY CONCERNS\n1.  **Contact Data Storage:** Customer names/phone numbers are stored. *Question:* How long is data retained? Is there a GDPR/CCPA compliance requirement?\n2.  **SMS Reminders (Undecided):** If SMS is later added, it requires explicit consent. Currently, no consent mechanism is defined for email or phone storage.\n\n## OPEN QUESTIONS\n1.  **Payments:** Are payments collected upfront (prepayment) or at the shop? *Impact:* Payment gateway integration (Stripe/PayPal) adds significant complexity for a 1-weekend MVP.\n2.  **SMS Reminders:** Confirmed as undecided. If excluded from MVP, what is the notification method? Email? Manual phone call?\n3.  **Cancellation Policy:** How far in advance can customers cancel? Is there a fee?\n4.  **Barber Availability:** Do all 3 barbers work the same hours? Are there days off?\n\n## TESTABLE ACCEPTANCE CRITERIA\n1.  **Double-Booking Prevention:** Two users attempt to book the same barber at the same time; exactly one succeeds, the other receives an error.\n2.  **Lunch Block Enforcement:** A customer cannot select a time slot that falls within a barber’s blocked lunch hours.\n3.  **Barber Selection:** The booking form allows explicit selection of one of the three barbers.\n4.  **MVP Scope:** The system does not require paid SMS, payment gateway, or complex admin dashboard beyond basic time blocking.\n\n## CONTRADICTIONS\n*   **\"Small MVP\" vs. \"Payments\":** If payments are undecided but potentially included, the MVP is no longer small. *Recommendation:* Treat payments as out-of-scope for this weekend unless explicitly confirmed.",
+      "at": "2026-10-30T09:34:36.841Z"
+    },
+    {
+      "id": "683dc25b-e1c6-4853-99fe-7c731b7516e4",
+      "stage": "draft",
+      "agentId": "architect",
+      "content": "# Technical Planner: Barbershop Booking MVP\n\n## USER FACTS\n*   **Scale:** 1 shop, 3 barbers.\n*   **Core Needs:** Online booking, barber selection, double-booking prevention, staff lunch blocking.\n*   **Constraints:** 1 developer, 1 weekend (~40-50 hours), small MVP.\n*   **Undecided/Unknown:** Payment method, SMS reminder mechanism.\n*   **Budget Constraint:** No budget for paid messaging.\n\n## PROPOSALS (Provisional pending user confirmation)\n\n### Architecture\n**Monolithic Web App with Client-Side State Management.**\nAvoid microservices or complex backend logic. Use a single-page application (SPA) frontend talking to a lightweight API or direct database queries if using a BaaS (Backend-as-a-Service).\n\n*   **Frontend:** React (or Next.js for simplicity).\n*   **Backend/DB:** Supabase or Firebase (Auth, Realtime DB, Edge Functions). This minimizes infrastructure setup time.\n*   **Scheduling Logic:** Server-side function handles slot availability to prevent race conditions (double bookings).\n\n### Dependencies\n1.  **Framework:** Next.js (React) – reduces boilerplate.\n2.  **Backend/DB:** Supabase (PostgreSQL + Auth + Row Level Security).\n3.  **Styling:** Tailwind CSS (rapid UI development).\n4.  **Date Handling:** Day.js (lightweight).\n5.  **Payment (Provisional):** Stripe Checkout (if payments are confirmed needed; otherwise, \"Pay in Shop\" for MVP). *Note: User stated payments are undecided.*\n6.  **Reminders (Provisional):** Email via Resend or SendGrid (free tier usually sufficient for low volume). *SMS is expensive; email is the zero-cost fallback.*\n\n### Implementation Steps (Weekend Plan)\n1.  **Day 1 AM:** Setup Supabase project. Create `barbers`, `bookings`, `blocked_slots` tables. Define schema (barber_id, start_time, end_time, customer_email).\n2.  **Day 1 PM:** Build Admin View. Simple table to toggle \"Lunch Block\" for each barber/day. Save to `blocked_slots`.\n3.  **Day 2 AM:** Build Customer View. List barbers → Select Date → Show Available Slots (query: `available_time` minus `bookings` minus `blocked_slots`).\n4.  **Day 2 PM:** Implement Booking Logic. Transactional DB update to insert booking only if slot is free. Collect email/phone.\n5.  **Day 3 AM:** Email Reminder. Trigger serverless function on booking creation to send confirmation + reminder email 24h prior.\n6.  **Day 3 PM:** Testing & Deployment. Deploy to Vercel/Netlify. UAT with the 3 barbers.\n\n### Technical Risks\n1.  **Race Conditions:** Two customers book the same slot simultaneously. *Mitigation:* Use database transactions or optimistic locking in the booking function.\n2.  **Timezone Confusion:** Barbers/customers in different zones. *Assumption:* All local time. *Mitigation:* Store UTC, display Local.\n3.  **Scope Creep:** Developer tries to build complex cancellation policies or loyalty programs. *Mitigation:* Strictly limit to \"Book\" and \"Cancel\".\n\n### Open Questions (Require User Decision)\n1.  **Payments:** Do customers pay online, or at the shop? If undecided, default to **Pay in Shop** for MVP to save dev time.\n2.  **Reminders:** Confirm if **Email** is acceptable in lieu of SMS due to budget constraints.\n3.  **Cancellation Policy:** How many hours before can a customer cancel? (Default: 24h).\n\n### Assumptions\n*   Barbers have consistent schedules (e.g., 9am–5pm, 1h lunch).\n*   No need for recurring appointments in MVP.\n*   Customer data is minimal (Name, Phone, Email).",
+      "at": "2026-10-30T09:35:00.976Z"
+    },
+    {
+      "id": "6f209599-2c0e-4105-8309-1227bc8791ed",
+      "stage": "draft",
+      "agentId": "product",
+      "content": "# Product Analyst Draft: Barbershop Booking MVP\n\n## Target Users\n*   **Customers:** Local clients needing to book a haircut with a specific barber.\n*   **Barbers (Staff):** Three employees who need to see their schedule and block unavailable times (e.g., lunch).\n*   **Owner:** Manages the shop but relies on the system to prevent conflicts.\n\n## Core User Journey\n1.  **Customer** opens the booking page and selects a service (e.g., \"Cut\").\n2.  **Customer** selects a specific barber from the available three.\n3.  **System** displays available time slots for that barber, excluding blocked times (lunch) and existing bookings.\n4.  **Customer** selects a slot and confirms.\n5.  **System** locks the slot to prevent double-booking and displays a confirmation screen with a unique booking code.\n6.  **Barber** logs in, views their day, and can block specific hours (e.g., 12:00–13:00) for lunch.\n\n## MVP Scope (Buildable in 1 Day)\n*   **Frontend:** Single-page web app. Forms for barber selection, date picker, and time slot grid.\n*   **Backend:** Lightweight API to handle slot availability logic.\n*   **Data Model:**\n    *   `Barbers`: ID, Name.\n    *   `Bookings`: ID, BarberID, DateTime, CustomerName, Status (Confirmed/Cancelled).\n    *   `Blocks`: ID, BarberID, StartDate, EndDate, Reason.\n*   **Logic:**\n    *   Query available slots: `AllSlots - ExistingBookings - BlockedTimes`.\n    *   Prevent double-booking via unique constraint on `(BarberID, DateTime)`.\n*   **Auth:** Simple email/password login for barbers/owner. No auth for customers (guest booking).\n\n## Explicit Non-Goals\n*   **Payments:** No payment processing. Bookings are \"pay at shop.\"\n*   **SMS/Email Reminders:** No automated notifications. Customers must save the confirmation code/date.\n*   **Customer Accounts:** No user profiles or history.\n*   **Mobile App:** Web-only, responsive design only.\n*   **Service Catalog:** Fixed list of services (e.g., Cut, Beard) hardcoded or simple admin input. No dynamic pricing.\n\n## Assumptions\n*   **Slot Duration:** All services take 30 minutes.\n*   **Operating Hours:** Fixed daily hours (e.g., 9:00–17:00) configured once.\n*   **Concurrency:** Low traffic; simple database locking is sufficient for double-booking prevention.\n*   **Tech Stack:** Developer’s preferred stack (e.g., Node/React or Python/Django) with a free-tier database (e.g., Supabase, Firebase, or local Postgres).\n\n## Open Questions\n1.  **Payment Method:** *Undecided.* Will customers pay cash/card at the shop, or do we need a deposit? (Assumption: Pay at shop.)\n2.  **Reminder Mechanism:** *Undecided.* Since no budget for SMS, will we rely on email (if customer provides it) or just the confirmation screen? (Assumption: Confirmation screen only.)\n3.  **Cancellation Policy:** How many hours before must a customer cancel to free up the slot? (Assumption: Instant cancellation allowed.)\n4.  **Service Variance:** Do all services take the same time (30 min), or do some require longer (e.g., 60 min for beard + cut)? (Assumption: Fixed 30-min slots for MVP.)\n\n## Provisional Recommendations\n*   **Use a No-Code/Low-Code Tool:** If the developer is not full-stack, consider using a tool like Airtable + Softr or a simple Next.js app with Supabase to save time.\n*   **Email Confirmation:** If email is feasible (free via SMTP), send a simple confirmation email to reduce no-shows. *Pending user confirmation.*",
+      "at": "2026-10-30T09:35:24.799Z"
+    },
+    {
+      "id": "7526cc6a-3bd8-4325-966d-e8c41c617896",
+      "stage": "review",
+      "agentId": "qa",
+      "content": "# Cross-Agent Review: Barbershop Booking MVP\n\n## Undecided Choices Check\nThe brief explicitly marks **Payments** and **SMS reminders** as undecided.\n1.  **Product Analyst:** Preserves both as Open Questions. *However*, it assumes \"Pay at shop\" and \"Confirmation screen only\" as working defaults. This is acceptable as a provisional path, provided the user confirms.\n2.  **QA Critic:** Preserves both as Open Questions. Correctly flags that SMS requires consent if added later.\n3.  **Technical Planner:** Preserves both as Open Questions. *However*, it proposes \"Email via Resend/SendGrid\" as a specific implementation for Day 3 AM. This is a **silent decision** to use email, even though the brief only says SMS is undecided and there is no budget for *paid* messaging. Email is free, but the user hasn't confirmed email is desired or that customers will provide it.\n\n## Conflicts & Unsupported Assumptions\n\n1.  **Conflict: Service Duration Assumption**\n    *   **Agent:** Product Analyst\n    *   **Claim:** \"Slot Duration: All services take 30 minutes.\"\n    *   **Effect:** If a barber offers 60-minute cuts, the slot grid will be wrong, leading to double bookings or underutilization.\n    *   **PROPOSAL:** Define service types with variable durations in the data model, even if only one type (\"Cut\") is active initially.\n\n2.  **Conflict: Customer Contact Data Requirement**\n    *   **Agent:** Technical Planner\n    *   **Claim:** \"Collect email/phone\" in Implementation Step 4.\n    *   **Effect:** If phone is mandatory, it may violate privacy preferences or add friction. The brief does not require phone numbers.\n    *   **PROPOSAL:** Make Email optional or primary for confirmation; do not mandate Phone unless SMS is confirmed.\n\n3.  **Conflict: Lunch Blocking Mechanism**\n    *   **Agent:** Product Analyst\n    *   **Claim:** \"Barber logs in... and can block specific hours.\"\n    *   **Effect:** Adds auth complexity for barbers. The brief says \"Staff must block lunch breaks,\" which could mean the owner does it.\n    *   **PROPOSAL:** Simplify to Owner-only admin panel for blocking slots to reduce MVP scope.\n\n4.  **Conflict: Timezone Handling**\n    *   **Agent:** Technical Planner\n    *   **Claim:** \"Store UTC, display Local.\"\n    *   **Effect:** Over-engineering for a single local barbershop. All users are likely in the same timezone.\n    *   **PROPOSAL:** Store and display in local shop time to reduce cognitive load and dev time.\n\n5.  **Conflict: No-Show Mitigation**\n    *   **Agent:** QA Critic\n    *   **Claim:** \"No cancellation policy or deposit mechanism defined.\"\n    *   **Effect:** Without a policy, customers may hold slots indefinitely.\n    *   **PROPOSAL:** Define a simple cancellation window (e.g., 24 hours) as an Open Question for the user.\n\n## Privacy & Ownership Check\n*   **Privacy:** No draft mandates phone numbers. Product Analyst and QA Critic correctly note consent needs for email/SMS. Technical Planner’s \"Collect email/phone\" is slightly aggressive; **PROPOSAL:** Make phone optional.\n*   **Ownership:** No draft names a specific human owner for disputes or support. A \"support link\" is not sufficient. **PROPOSAL:** Owner to be the named contact for booking errors.\n\n## Acceptance Checks\n1.  **Double-Booking:** Two users book same slot; one succeeds, one fails. (All drafts cover this).\n2.  **Lunch Block:** Customer cannot book during blocked lunch hours. (All drafts cover this).\n3.  **Barber Selection:** UI allows explicit selection of one of three barbers. (All drafts cover this).\n4.  **Undecided Scope:** Payments and SMS are not hardcoded into the MVP build unless user confirms. (Technical Planner needs adjustment).",
+      "at": "2026-10-30T09:36:21.64Z"
+    },
+    {
+      "id": "1e80b70d-1249-4a75-9562-bd641ef1e4ef",
+      "stage": "final",
+      "agentId": "product",
+      "content": "# Final Specification: Barbershop Booking MVP\n\n## Goal & Users\nEnable customers to book specific barbers online without double-booking, allowing staff to block lunch breaks.\n*   **Customers:** Book appointments with a preferred barber.\n*   **Staff/Owner:** Manage availability and view schedules.\n\n## MVP Scope\n*   **Public Booking Page:** Select barber (1 of 3), date, and time slot.\n*   **Availability Logic:** Real-time check excluding existing bookings and blocked hours.\n*   **Admin Panel:** Login for staff to block specific time slots (e.g., lunch).\n*   **Data Model:** `Barbers`, `Bookings` (with unique constraint on barber/time), `BlockedSlots`.\n*   **Contact Data:** Name (required), Email (optional, for confirmation), Phone (optional).\n\n## Non-Goals\n*   Payment processing.\n*   Automated SMS reminders.\n*   Customer accounts/profiles.\n*   Variable service durations (all slots are fixed duration).\n*   Mobile native app (responsive web only).\n\n## User Journey\n1.  Customer selects a barber and date.\n2.  System displays available slots (excluding blocked times/bookings).\n3.  Customer selects slot, enters Name (and optional Email/Phone), confirms.\n4.  System locks slot (unique constraint) and shows confirmation code.\n5.  Staff logs in to Admin Panel and blocks lunch hours for specific days.\n\n## Architecture\n*   **Frontend:** React/Next.js SPA.\n*   **Backend/DB:** Supabase (PostgreSQL, Auth, Row Level Security).\n*   **Logic:** Server-side transaction for booking insertion to prevent race conditions.\n*   **Hosting:** Vercel/Netlify (free tier).\n\n## Acceptance Criteria\n1.  **Double-Booking Prevention:** Given two users attempt to book the same barber/slot, When the second request processes, Then it fails with an error if the first succeeded.\n2.  **Lunch Block Enforcement:** Given a slot is blocked in Admin, When a customer views that time, Then the slot is disabled/hidden.\n3.  **Barber Selection:** Given the booking page loads, When a customer selects a barber, Then only that barber’s availability is shown.\n4.  **Conditional: Email Confirmation:** *If confirmed by user*, When a booking is made with an email address, Then a confirmation email is sent.\n\n## Prioritized Implementation Checklist\n1.  Setup Supabase schema (`barbers`, `bookings`, `blocked_slots`).\n2.  Build Admin Panel (Login + Block Slots UI).\n3.  Build Customer Booking UI (Barber/Date/Slot selection).\n4.  Implement Booking API (Transaction + Unique Constraint).\n5.  *Conditional:* Implement Email Trigger (if confirmed).\n6.  Deploy & Test race conditions.\n\n## Decisions & Changes After Review\n*   **Service Duration:** QA flagged that assuming \"30 minutes\" for all services is risky. **Change:** Define a single fixed slot duration (e.g., 30 mins) as a configurable constant, acknowledging that variable durations are out of scope.\n*   **Contact Data:** QA noted Technical Planner mandated phone numbers. **Change:** Phone is now optional; Email is preferred for consent-based contact.\n*   **Lunch Blocking:** QA suggested simplifying to Owner-only. **Decision:** Keep \"Staff/Owner\" login but simplify UI to a toggle for standard lunch hours to reduce complexity.\n*   **Timezone:** QA flagged UTC as over-engineering. **Change:** Store and display in local shop time.\n*   **Email Reminders:** QA noted Technical Planner silently added email reminders. **Change:** Email confirmation is now *conditional* on user approval, as the brief only excluded *paid* SMS, not email, but user preference is unknown.\n\n## Assumptions\n*   All barbers work the same base hours (e.g., 9–5).\n*   Low traffic volume (simple DB locking suffices).\n*   \"Online\" means a public web URL.\n\n## Open Questions\n1.  **Payments:** Brief states: *\"Payments... are undecided.\"*\n    *   *Provisional Default:* Pay at shop.\n2.  **SMS Reminders:** Brief states: *\"SMS reminders are undecided and we have no budget for paid messaging.\"*\n    *   *Provisional Default:* No automated reminders; rely on confirmation screen/email.\n3.  **Notification Method:** Since SMS is undecided/budget-constrained, is **Email** acceptable for confirmations/reminders? (Brief does not explicitly mention email).\n4.  **Cancellation Policy:** How long before a slot can be cancelled? (Brief silent).\n5.  **Accountable Owner:** Who is the human point of contact for booking errors or disputes? (Brief silent; support link is insufficient).\n6.  **Service Duration:** Do all services take the same time? (Brief silent; assumed fixed for MVP).",
+      "at": "2026-10-30T09:37:33.304Z"
+    }
+  ],
+  "agents": [
+    {
+      "id": "product",
+      "name": "Product Analyst",
+      "status": "completed",
+      "output": "# Final Specification: Barbershop Booking MVP\n\n## Goal & Users\nEnable customers to book specific barbers online without double-booking, allowing staff to block lunch breaks.\n*   **Customers:** Book appointments with a preferred barber.\n*   **Staff/Owner:** Manage availability and view schedules.\n\n## MVP Scope\n*   **Public Booking Page:** Select barber (1 of 3), date, and time slot.\n*   **Availability Logic:** Real-time check excluding existing bookings and blocked hours.\n*   **Admin Panel:** Login for staff to block specific time slots (e.g., lunch).\n*   **Data Model:** `Barbers`, `Bookings` (with unique constraint on barber/time), `BlockedSlots`.\n*   **Contact Data:** Name (required), Email (optional, for confirmation), Phone (optional).\n\n## Non-Goals\n*   Payment processing.\n*   Automated SMS reminders.\n*   Customer accounts/profiles.\n*   Variable service durations (all slots are fixed duration).\n*   Mobile native app (responsive web only).\n\n## User Journey\n1.  Customer selects a barber and date.\n2.  System displays available slots (excluding blocked times/bookings).\n3.  Customer selects slot, enters Name (and optional Email/Phone), confirms.\n4.  System locks slot (unique constraint) and shows confirmation code.\n5.  Staff logs in to Admin Panel and blocks lunch hours for specific days.\n\n## Architecture\n*   **Frontend:** React/Next.js SPA.\n*   **Backend/DB:** Supabase (PostgreSQL, Auth, Row Level Security).\n*   **Logic:** Server-side transaction for booking insertion to prevent race conditions.\n*   **Hosting:** Vercel/Netlify (free tier).\n\n## Acceptance Criteria\n1.  **Double-Booking Prevention:** Given two users attempt to book the same barber/slot, When the second request processes, Then it fails with an error if the first succeeded.\n2.  **Lunch Block Enforcement:** Given a slot is blocked in Admin, When a customer views that time, Then the slot is disabled/hidden.\n3.  **Barber Selection:** Given the booking page loads, When a customer selects a barber, Then only that barber’s availability is shown.\n4.  **Conditional: Email Confirmation:** *If confirmed by user*, When a booking is made with an email address, Then a confirmation email is sent.\n\n## Prioritized Implementation Checklist\n1.  Setup Supabase schema (`barbers`, `bookings`, `blocked_slots`).\n2.  Build Admin Panel (Login + Block Slots UI).\n3.  Build Customer Booking UI (Barber/Date/Slot selection).\n4.  Implement Booking API (Transaction + Unique Constraint).\n5.  *Conditional:* Implement Email Trigger (if confirmed).\n6.  Deploy & Test race conditions.\n\n## Decisions & Changes After Review\n*   **Service Duration:** QA flagged that assuming \"30 minutes\" for all services is risky. **Change:** Define a single fixed slot duration (e.g., 30 mins) as a configurable constant, acknowledging that variable durations are out of scope.\n*   **Contact Data:** QA noted Technical Planner mandated phone numbers. **Change:** Phone is now optional; Email is preferred for consent-based contact.\n*   **Lunch Blocking:** QA suggested simplifying to Owner-only. **Decision:** Keep \"Staff/Owner\" login but simplify UI to a toggle for standard lunch hours to reduce complexity.\n*   **Timezone:** QA flagged UTC as over-engineering. **Change:** Store and display in local shop time.\n*   **Email Reminders:** QA noted Technical Planner silently added email reminders. **Change:** Email confirmation is now *conditional* on user approval, as the brief only excluded *paid* SMS, not email, but user preference is unknown.\n\n## Assumptions\n*   All barbers work the same base hours (e.g., 9–5).\n*   Low traffic volume (simple DB locking suffices).\n*   \"Online\" means a public web URL.\n\n## Open Questions\n1.  **Payments:** Brief states: *\"Payments... are undecided.\"*\n    *   *Provisional Default:* Pay at shop.\n2.  **SMS Reminders:** Brief states: *\"SMS reminders are undecided and we have no budget for paid messaging.\"*\n    *   *Provisional Default:* No automated reminders; rely on confirmation screen/email.\n3.  **Notification Method:** Since SMS is undecided/budget-constrained, is **Email** acceptable for confirmations/reminders? (Brief does not explicitly mention email).\n4.  **Cancellation Policy:** How long before a slot can be cancelled? (Brief silent).\n5.  **Accountable Owner:** Who is the human point of contact for booking errors or disputes? (Brief silent; support link is insufficient).\n6.  **Service Duration:** Do all services take the same time? (Brief silent; assumed fixed for MVP)."
+    },
+    {
+      "id": "qa",
+      "name": "QA Critic",
+      "status": "completed",
+      "output": "# Cross-Agent Review: Barbershop Booking MVP\n\n## Undecided Choices Check\nThe brief explicitly marks **Payments** and **SMS reminders** as undecided.\n1.  **Product Analyst:** Preserves both as Open Questions. *However*, it assumes \"Pay at shop\" and \"Confirmation screen only\" as working defaults. This is acceptable as a provisional path, provided the user confirms.\n2.  **QA Critic:** Preserves both as Open Questions. Correctly flags that SMS requires consent if added later.\n3.  **Technical Planner:** Preserves both as Open Questions. *However*, it proposes \"Email via Resend/SendGrid\" as a specific implementation for Day 3 AM. This is a **silent decision** to use email, even though the brief only says SMS is undecided and there is no budget for *paid* messaging. Email is free, but the user hasn't confirmed email is desired or that customers will provide it.\n\n## Conflicts & Unsupported Assumptions\n\n1.  **Conflict: Service Duration Assumption**\n    *   **Agent:** Product Analyst\n    *   **Claim:** \"Slot Duration: All services take 30 minutes.\"\n    *   **Effect:** If a barber offers 60-minute cuts, the slot grid will be wrong, leading to double bookings or underutilization.\n    *   **PROPOSAL:** Define service types with variable durations in the data model, even if only one type (\"Cut\") is active initially.\n\n2.  **Conflict: Customer Contact Data Requirement**\n    *   **Agent:** Technical Planner\n    *   **Claim:** \"Collect email/phone\" in Implementation Step 4.\n    *   **Effect:** If phone is mandatory, it may violate privacy preferences or add friction. The brief does not require phone numbers.\n    *   **PROPOSAL:** Make Email optional or primary for confirmation; do not mandate Phone unless SMS is confirmed.\n\n3.  **Conflict: Lunch Blocking Mechanism**\n    *   **Agent:** Product Analyst\n    *   **Claim:** \"Barber logs in... and can block specific hours.\"\n    *   **Effect:** Adds auth complexity for barbers. The brief says \"Staff must block lunch breaks,\" which could mean the owner does it.\n    *   **PROPOSAL:** Simplify to Owner-only admin panel for blocking slots to reduce MVP scope.\n\n4.  **Conflict: Timezone Handling**\n    *   **Agent:** Technical Planner\n    *   **Claim:** \"Store UTC, display Local.\"\n    *   **Effect:** Over-engineering for a single local barbershop. All users are likely in the same timezone.\n    *   **PROPOSAL:** Store and display in local shop time to reduce cognitive load and dev time.\n\n5.  **Conflict: No-Show Mitigation**\n    *   **Agent:** QA Critic\n    *   **Claim:** \"No cancellation policy or deposit mechanism defined.\"\n    *   **Effect:** Without a policy, customers may hold slots indefinitely.\n    *   **PROPOSAL:** Define a simple cancellation window (e.g., 24 hours) as an Open Question for the user.\n\n## Privacy & Ownership Check\n*   **Privacy:** No draft mandates phone numbers. Product Analyst and QA Critic correctly note consent needs for email/SMS. Technical Planner’s \"Collect email/phone\" is slightly aggressive; **PROPOSAL:** Make phone optional.\n*   **Ownership:** No draft names a specific human owner for disputes or support. A \"support link\" is not sufficient. **PROPOSAL:** Owner to be the named contact for booking errors.\n\n## Acceptance Checks\n1.  **Double-Booking:** Two users book same slot; one succeeds, one fails. (All drafts cover this).\n2.  **Lunch Block:** Customer cannot book during blocked lunch hours. (All drafts cover this).\n3.  **Barber Selection:** UI allows explicit selection of one of three barbers. (All drafts cover this).\n4.  **Undecided Scope:** Payments and SMS are not hardcoded into the MVP build unless user confirms. (Technical Planner needs adjustment)."
+    },
+    {
+      "id": "architect",
+      "name": "Technical Planner",
+      "status": "completed",
+      "output": "# Technical Planner: Barbershop Booking MVP\n\n## USER FACTS\n*   **Scale:** 1 shop, 3 barbers.\n*   **Core Needs:** Online booking, barber selection, double-booking prevention, staff lunch blocking.\n*   **Constraints:** 1 developer, 1 weekend (~40-50 hours), small MVP.\n*   **Undecided/Unknown:** Payment method, SMS reminder mechanism.\n*   **Budget Constraint:** No budget for paid messaging.\n\n## PROPOSALS (Provisional pending user confirmation)\n\n### Architecture\n**Monolithic Web App with Client-Side State Management.**\nAvoid microservices or complex backend logic. Use a single-page application (SPA) frontend talking to a lightweight API or direct database queries if using a BaaS (Backend-as-a-Service).\n\n*   **Frontend:** React (or Next.js for simplicity).\n*   **Backend/DB:** Supabase or Firebase (Auth, Realtime DB, Edge Functions). This minimizes infrastructure setup time.\n*   **Scheduling Logic:** Server-side function handles slot availability to prevent race conditions (double bookings).\n\n### Dependencies\n1.  **Framework:** Next.js (React) – reduces boilerplate.\n2.  **Backend/DB:** Supabase (PostgreSQL + Auth + Row Level Security).\n3.  **Styling:** Tailwind CSS (rapid UI development).\n4.  **Date Handling:** Day.js (lightweight).\n5.  **Payment (Provisional):** Stripe Checkout (if payments are confirmed needed; otherwise, \"Pay in Shop\" for MVP). *Note: User stated payments are undecided.*\n6.  **Reminders (Provisional):** Email via Resend or SendGrid (free tier usually sufficient for low volume). *SMS is expensive; email is the zero-cost fallback.*\n\n### Implementation Steps (Weekend Plan)\n1.  **Day 1 AM:** Setup Supabase project. Create `barbers`, `bookings`, `blocked_slots` tables. Define schema (barber_id, start_time, end_time, customer_email).\n2.  **Day 1 PM:** Build Admin View. Simple table to toggle \"Lunch Block\" for each barber/day. Save to `blocked_slots`.\n3.  **Day 2 AM:** Build Customer View. List barbers → Select Date → Show Available Slots (query: `available_time` minus `bookings` minus `blocked_slots`).\n4.  **Day 2 PM:** Implement Booking Logic. Transactional DB update to insert booking only if slot is free. Collect email/phone.\n5.  **Day 3 AM:** Email Reminder. Trigger serverless function on booking creation to send confirmation + reminder email 24h prior.\n6.  **Day 3 PM:** Testing & Deployment. Deploy to Vercel/Netlify. UAT with the 3 barbers.\n\n### Technical Risks\n1.  **Race Conditions:** Two customers book the same slot simultaneously. *Mitigation:* Use database transactions or optimistic locking in the booking function.\n2.  **Timezone Confusion:** Barbers/customers in different zones. *Assumption:* All local time. *Mitigation:* Store UTC, display Local.\n3.  **Scope Creep:** Developer tries to build complex cancellation policies or loyalty programs. *Mitigation:* Strictly limit to \"Book\" and \"Cancel\".\n\n### Open Questions (Require User Decision)\n1.  **Payments:** Do customers pay online, or at the shop? If undecided, default to **Pay in Shop** for MVP to save dev time.\n2.  **Reminders:** Confirm if **Email** is acceptable in lieu of SMS due to budget constraints.\n3.  **Cancellation Policy:** How many hours before can a customer cancel? (Default: 24h).\n\n### Assumptions\n*   Barbers have consistent schedules (e.g., 9am–5pm, 1h lunch).\n*   No need for recurring appointments in MVP.\n*   Customer data is minimal (Name, Phone, Email)."
+    }
+  ],
+  "result": "# Final Specification: Barbershop Booking MVP\n\n## Goal & Users\nEnable customers to book specific barbers online without double-booking, allowing staff to block lunch breaks.\n*   **Customers:** Book appointments with a preferred barber.\n*   **Staff/Owner:** Manage availability and view schedules.\n\n## MVP Scope\n*   **Public Booking Page:** Select barber (1 of 3), date, and time slot.\n*   **Availability Logic:** Real-time check excluding existing bookings and blocked hours.\n*   **Admin Panel:** Login for staff to block specific time slots (e.g., lunch).\n*   **Data Model:** `Barbers`, `Bookings` (with unique constraint on barber/time), `BlockedSlots`.\n*   **Contact Data:** Name (required), Email (optional, for confirmation), Phone (optional).\n\n## Non-Goals\n*   Payment processing.\n*   Automated SMS reminders.\n*   Customer accounts/profiles.\n*   Variable service durations (all slots are fixed duration).\n*   Mobile native app (responsive web only).\n\n## User Journey\n1.  Customer selects a barber and date.\n2.  System displays available slots (excluding blocked times/bookings).\n3.  Customer selects slot, enters Name (and optional Email/Phone), confirms.\n4.  System locks slot (unique constraint) and shows confirmation code.\n5.  Staff logs in to Admin Panel and blocks lunch hours for specific days.\n\n## Architecture\n*   **Frontend:** React/Next.js SPA.\n*   **Backend/DB:** Supabase (PostgreSQL, Auth, Row Level Security).\n*   **Logic:** Server-side transaction for booking insertion to prevent race conditions.\n*   **Hosting:** Vercel/Netlify (free tier).\n\n## Acceptance Criteria\n1.  **Double-Booking Prevention:** Given two users attempt to book the same barber/slot, When the second request processes, Then it fails with an error if the first succeeded.\n2.  **Lunch Block Enforcement:** Given a slot is blocked in Admin, When a customer views that time, Then the slot is disabled/hidden.\n3.  **Barber Selection:** Given the booking page loads, When a customer selects a barber, Then only that barber’s availability is shown.\n4.  **Conditional: Email Confirmation:** *If confirmed by user*, When a booking is made with an email address, Then a confirmation email is sent.\n\n## Prioritized Implementation Checklist\n1.  Setup Supabase schema (`barbers`, `bookings`, `blocked_slots`).\n2.  Build Admin Panel (Login + Block Slots UI).\n3.  Build Customer Booking UI (Barber/Date/Slot selection).\n4.  Implement Booking API (Transaction + Unique Constraint).\n5.  *Conditional:* Implement Email Trigger (if confirmed).\n6.  Deploy & Test race conditions.\n\n## Decisions & Changes After Review\n*   **Service Duration:** QA flagged that assuming \"30 minutes\" for all services is risky. **Change:** Define a single fixed slot duration (e.g., 30 mins) as a configurable constant, acknowledging that variable durations are out of scope.\n*   **Contact Data:** QA noted Technical Planner mandated phone numbers. **Change:** Phone is now optional; Email is preferred for consent-based contact.\n*   **Lunch Blocking:** QA suggested simplifying to Owner-only. **Decision:** Keep \"Staff/Owner\" login but simplify UI to a toggle for standard lunch hours to reduce complexity.\n*   **Timezone:** QA flagged UTC as over-engineering. **Change:** Store and display in local shop time.\n*   **Email Reminders:** QA noted Technical Planner silently added email reminders. **Change:** Email confirmation is now *conditional* on user approval, as the brief only excluded *paid* SMS, not email, but user preference is unknown.\n\n## Assumptions\n*   All barbers work the same base hours (e.g., 9–5).\n*   Low traffic volume (simple DB locking suffices).\n*   \"Online\" means a public web URL.\n\n## Open Questions\n1.  **Payments:** Brief states: *\"Payments... are undecided.\"*\n    *   *Provisional Default:* Pay at shop.\n2.  **SMS Reminders:** Brief states: *\"SMS reminders are undecided and we have no budget for paid messaging.\"*\n    *   *Provisional Default:* No automated reminders; rely on confirmation screen/email.\n3.  **Notification Method:** Since SMS is undecided/budget-constrained, is **Email** acceptable for confirmations/reminders? (Brief does not explicitly mention email).\n4.  **Cancellation Policy:** How long before a slot can be cancelled? (Brief silent).\n5.  **Accountable Owner:** Who is the human point of contact for booking errors or disputes? (Brief silent; support link is insufficient).\n6.  **Service Duration:** Do all services take the same time? (Brief silent; assumed fixed for MVP).",
+  "completedAt": "2026-10-30T09:37:33.304Z"
+}

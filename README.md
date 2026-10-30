@@ -6,6 +6,18 @@ Spec Rescue is a Freestyle entry for the NTP Novi Sad AI Hackathon. Product, QA 
 
 The intended user is a solo builder or small team trying to decide what to build next. The useful output is a scoped plan with testable acceptance criteria, explicit unknowns and a record of decisions changed after review. This app produces specifications; it does not generate, deploy or validate the proposed software.
 
+## Inspect real run evidence (no model setup needed)
+
+Start with the [evidence guide](docs/evidence/README.md), read the [book-exchange specification and collaboration transcript](docs/evidence/final-books.md), or inspect the [full run JSON with timestamps and loop IDs](docs/evidence/final-books.json). These are archived outputs from an actual local Qwen run through Mozaik, provided for inspection. They are not canned responses served by the product or a substitute for configuring a model.
+
+Using Node.js, check the saved records without installing dependencies or calling a model:
+
+```sh
+node scripts/verify-evidence.mjs
+```
+
+The script validates saved timeline and artifact invariants, including the three overlapping initial requests and the review/synthesis order. It does not assess semantic quality or independently establish the records' origin; review the original brief, drafts and final output yourself.
+
 ## Run locally
 
 Requirements: **Node.js 22+**, npm, and access to an OpenAI-compatible **Chat Completions** model endpoint. A hosted provider may charge for requests. A local llama.cpp endpoint works without an API key.

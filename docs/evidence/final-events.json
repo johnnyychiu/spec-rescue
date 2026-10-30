@@ -1,0 +1,236 @@
+{
+  "id": "5215cb95-4bec-422b-bd5b-4095e4e08ecc",
+  "brief": "Our student society needs an event signup app for a 100-person workshop next week. We need a waitlist, cancellations, and a way to check people in at the door. Some attendees may bring friends. We have two days and no budget for paid services. Whether guests count toward capacity and whether to require accounts are undecided. What should the MVP include?",
+  "status": "completed",
+  "phase": "completed",
+  "model": "home-chat",
+  "startedAt": "2026-10-30T09:37:34.068Z",
+  "events": [
+    {
+      "id": "1c325485-561d-4489-ada4-a5e68f3488a1",
+      "at": "2026-10-30T09:37:34.068Z",
+      "type": "brief.submitted",
+      "message": "Brief published to all three agents; independent drafts begin concurrently."
+    },
+    {
+      "id": "759fea3d-f7d0-46e5-a2f1-7dbae1826903",
+      "at": "2026-10-30T09:37:34.068Z",
+      "type": "agent.started",
+      "message": "Product Analyst started an independent draft.",
+      "agentId": "product"
+    },
+    {
+      "id": "7c00be45-cab8-403e-bad2-d9dd6f2405ab",
+      "at": "2026-10-30T09:37:34.068Z",
+      "type": "agent.started",
+      "message": "QA Critic started an independent draft.",
+      "agentId": "qa"
+    },
+    {
+      "id": "9139335d-d1f9-49ce-8b84-fa24ca8f178a",
+      "at": "2026-10-30T09:37:34.069Z",
+      "type": "agent.started",
+      "message": "Technical Planner started an independent draft.",
+      "agentId": "architect"
+    },
+    {
+      "id": "01fdf05b-90eb-4309-a1c9-455e6e3d471f",
+      "at": "2026-10-30T09:37:34.069Z",
+      "type": "inference.started",
+      "message": "Product Analyst model request started.",
+      "agentId": "product",
+      "loopId": "eb645645-716b-4ace-9a30-8f1e1c10d7f3"
+    },
+    {
+      "id": "81bca6aa-7038-4135-b107-8b43ba0498e6",
+      "at": "2026-10-30T09:37:34.069Z",
+      "type": "inference.started",
+      "message": "QA Critic model request started.",
+      "agentId": "qa",
+      "loopId": "04e2352e-22c8-4496-b604-f87da5c252e4"
+    },
+    {
+      "id": "7649d1e7-05fc-4048-b578-3b9f14c118c2",
+      "at": "2026-10-30T09:37:34.069Z",
+      "type": "inference.started",
+      "message": "Technical Planner model request started.",
+      "agentId": "architect",
+      "loopId": "5cd42d92-13ca-4f15-b84e-b6ebeb2396ce"
+    },
+    {
+      "id": "569e3037-218c-4d93-ba84-700f0e7c3ec4",
+      "at": "2026-10-30T09:37:54.692Z",
+      "type": "inference.completed",
+      "message": "Product Analyst model request completed.",
+      "agentId": "product",
+      "loopId": "eb645645-716b-4ace-9a30-8f1e1c10d7f3"
+    },
+    {
+      "id": "8558f510-f878-4f57-b430-a6cc34a6b663",
+      "at": "2026-10-30T09:37:54.692Z",
+      "type": "model.answer",
+      "message": "Product Analyst completed draft.",
+      "agentId": "product",
+      "loopId": "eb645645-716b-4ace-9a30-8f1e1c10d7f3"
+    },
+    {
+      "id": "acb0b1c8-4204-47bb-beb8-b0e3f5cdb963",
+      "at": "2026-10-30T09:38:19.716Z",
+      "type": "inference.completed",
+      "message": "QA Critic model request completed.",
+      "agentId": "qa",
+      "loopId": "04e2352e-22c8-4496-b604-f87da5c252e4"
+    },
+    {
+      "id": "9dca3097-f65e-4698-9683-6433d683466f",
+      "at": "2026-10-30T09:38:19.716Z",
+      "type": "model.answer",
+      "message": "QA Critic completed draft.",
+      "agentId": "qa",
+      "loopId": "04e2352e-22c8-4496-b604-f87da5c252e4"
+    },
+    {
+      "id": "bd67e28a-854d-4315-a5fe-406c72756ea8",
+      "at": "2026-10-30T09:38:46.506Z",
+      "type": "inference.completed",
+      "message": "Technical Planner model request completed.",
+      "agentId": "architect",
+      "loopId": "5cd42d92-13ca-4f15-b84e-b6ebeb2396ce"
+    },
+    {
+      "id": "7415e3ef-a428-47c9-ab9a-e3e72ac55e82",
+      "at": "2026-10-30T09:38:46.507Z",
+      "type": "model.answer",
+      "message": "Technical Planner completed draft.",
+      "agentId": "architect",
+      "loopId": "5cd42d92-13ca-4f15-b84e-b6ebeb2396ce"
+    },
+    {
+      "id": "bc2d3dda-5779-4009-baf2-c28c35b4713e",
+      "at": "2026-10-30T09:38:46.507Z",
+      "type": "agent.started",
+      "message": "QA Critic started the cross-agent review.",
+      "agentId": "qa"
+    },
+    {
+      "id": "895b44e8-51d3-4fba-ad95-3db345ab2361",
+      "at": "2026-10-30T09:38:46.507Z",
+      "type": "inference.started",
+      "message": "QA Critic model request started.",
+      "agentId": "qa",
+      "loopId": "1c1489f4-8843-4a17-8382-d09bd557e17f"
+    },
+    {
+      "id": "0cea9371-9f88-4560-bfb9-282059fd74c3",
+      "at": "2026-10-30T09:39:22.864Z",
+      "type": "inference.completed",
+      "message": "QA Critic model request completed.",
+      "agentId": "qa",
+      "loopId": "1c1489f4-8843-4a17-8382-d09bd557e17f"
+    },
+    {
+      "id": "f149a127-c827-47d9-9ffd-7f873e44518d",
+      "at": "2026-10-30T09:39:22.864Z",
+      "type": "model.answer",
+      "message": "QA Critic completed review.",
+      "agentId": "qa",
+      "loopId": "1c1489f4-8843-4a17-8382-d09bd557e17f"
+    },
+    {
+      "id": "54256bad-0ced-4dba-980f-933b7c1cfdfa",
+      "at": "2026-10-30T09:39:22.864Z",
+      "type": "agent.started",
+      "message": "Product Analyst started the revised specification.",
+      "agentId": "product"
+    },
+    {
+      "id": "ea862a6b-1658-4fa9-97cb-776685ca88ae",
+      "at": "2026-10-30T09:39:22.865Z",
+      "type": "inference.started",
+      "message": "Product Analyst model request started.",
+      "agentId": "product",
+      "loopId": "d641ed78-d56c-442c-8f49-d3cea7e1c48e"
+    },
+    {
+      "id": "10eb8234-8ed3-4953-a0aa-060bc7742c31",
+      "at": "2026-10-30T09:40:03.137Z",
+      "type": "inference.completed",
+      "message": "Product Analyst model request completed.",
+      "agentId": "product",
+      "loopId": "d641ed78-d56c-442c-8f49-d3cea7e1c48e"
+    },
+    {
+      "id": "d590e4fe-6695-43a5-b052-35d08bcbe32c",
+      "at": "2026-10-30T09:40:03.137Z",
+      "type": "model.answer",
+      "message": "Product Analyst completed final.",
+      "agentId": "product",
+      "loopId": "d641ed78-d56c-442c-8f49-d3cea7e1c48e"
+    },
+    {
+      "id": "576febad-051d-4c85-99b6-7a574d92b7df",
+      "at": "2026-10-30T09:40:03.137Z",
+      "type": "run.completed",
+      "message": "Final specification ready. Original drafts and review remain available for inspection."
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "f230894c-ca39-4938-b407-355454001194",
+      "stage": "draft",
+      "agentId": "product",
+      "content": "# Product Analyst: Event Signup MVP\n\n## Target Users\n1.  **Organizers (2-3 people):** Need to manage capacity, view the live roster, and check attendees in at the door.\n2.  **Attendees (approx. 100+):** Students who need a quick, mobile-friendly way to sign up, cancel, or add a guest.\n\n## Core User Journey\n1.  **Sign Up:** User opens link → enters Name + Email → selects \"Self\" or \"Self + Guest(s)\" → receives confirmation link/code.\n2.  **Manage:** User clicks link in email (or re-enters email) → cancels self or guest spots → frees capacity.\n3.  **Check-In:** Organizer opens admin view → searches name/email → marks as \"Present\" → system updates capacity count.\n\n## MVP Scope (1 Developer / 1 Day)\n*   **Tech Stack:** Single-page frontend (React/Vue) + lightweight backend (Firebase/Supabase free tier or simple Node/Express with SQLite). No paid services.\n*   **Data Model:** `User` (name, email), `Registration` (user_id, guest_count, status: active/cancelled/checked_in).\n*   **Features:**\n    *   Public form: Name, Email, Guest Count (0-3).\n    *   Admin Dashboard: List of all registrations, search bar, toggle \"Checked In\" status.\n    *   Capacity Logic: Real-time counter showing `Active Registrations + Active Guests` vs. `Max Capacity`.\n    *   Waitlist: If capacity is full, new signups go to a `Waitlist` status. If a cancellation occurs, the first waitlisted person gets an email (or manual notification by organizer).\n    *   Cancellation: Simple \"Cancel\" button on the user’s confirmation page.\n*   **Guests:** Guests are treated as part of the primary registrant’s entry. They do not need individual accounts unless required (see Open Questions).\n\n## Explicit Non-Goals\n*   No user accounts/login system (unless decided otherwise).\n*   No complex scheduling or recurring events.\n*   No payment processing.\n*   No mobile native apps (responsive web only).\n*   No automated SMS notifications (email only).\n*   No role-based access control beyond a simple admin password for the dashboard.\n\n## Assumptions\n*   \"100-person capacity\" refers to total heads in the room, not just primary registrants.\n*   Organizers can share a single admin link/password with their team.\n*   Email is sufficient for notifications; no push notifications needed.\n*   The app will be hosted on a free tier service (e.g., Vercel, Netlify, Firebase) with no cost.\n\n## Open Questions\n1.  **Guest Capacity:** Do guests count toward the 100-person limit? *(Provisional: Yes, but pending user confirmation)*\n2.  **Accounts:** Do attendees need to create accounts/log in, or is email verification sufficient? *(Provisional: Email only, no accounts)*\n3.  **Waitlist Notification:** Should the system auto-email the next person on the waitlist, or should organizers manually notify them? *(Provisional: Manual notification to save dev time)*\n4.  **Guest Identity:** Do guests need to provide names/emails for check-in, or are they just a count? *(Provisional: Count only, to simplify UX)*",
+      "at": "2026-10-30T09:37:54.692Z"
+    },
+    {
+      "id": "768a9a53-7406-420b-b326-3a2db91278fe",
+      "stage": "draft",
+      "agentId": "qa",
+      "content": "# Spec Rescue: Initial Draft Critique\n\n## USER FACTS (Explicit)\n*   **Scale:** 100-person workshop.\n*   **Timeline:** Next week; 2 days to build.\n*   **Budget:** No paid services.\n*   **Core Features:** Signup, waitlist, cancellations, door check-in.\n*   **Scenario:** Attendees may bring friends.\n\n## PROPOSALS & ASSUMPTIONS (Agent-Generated)\n*   *Assumption:* \"No budget\" implies using free-tier tools (e.g., Google Forms/Sheets, Tally, or a local static site).\n*   *Assumption:* \"Check-in at the door\" implies a manual or semi-automated verification process, not hardware scanners.\n*   *Assumption:* \"Friends\" implies a secondary guest mechanism, but the data structure is undefined.\n\n## AMBIGUITIES & OPEN QUESTIONS\n**1. Guest Capacity Logic (Undecided by User)**\n*   **Question:** Do guests count toward the 100-person limit?\n*   **Contradiction Risk:** If a user signs up for themselves + 2 friends, do they occupy 3 slots or 1?\n*   **Provisional Recommendation:** Treat each *person* as one slot. A \"signup\" is a record of one individual. *Pending user confirmation.*\n\n**2. Account Requirements (Undecided by User)**\n*   **Question:** Do attendees need email accounts for verification?\n*   **Privacy Concern:** If no accounts, how do we prevent double-booking? If accounts are required, what data do we collect?\n*   **Provisional Recommendation:** Use email as a unique key (no password) to reduce friction. *Pending user confirmation.*\n\n**3. \"Check-In\" Definition**\n*   **Question:** What does \"check-in\" mean technically?\n    *   Option A: Staff looks up name in a list and marks \"Present.\"\n    *   Option B: User scans a QR code to mark themselves present.\n*   **Failure Case:** If Option B, what happens if the user’s phone is dead?\n\n## FAILURE CASES\n1.  **Race Condition:** Two people claim the last spot simultaneously.\n    *   *Mitigation:* Single-writer database or simple \"first-come\" timestamping.\n2.  **No-Show:** Someone signs up but doesn’t show.\n    *   *Mitigation:* Does the waitlist auto-promote? If so, when? (e.g., 1 hour before start).\n3.  **Guest Cancellation:** The host cancels, but the guest still wants to attend.\n    *   *Question:* Is the guest tied to the host’s slot?\n\n## PRIVACY CONCERNS\n*   **Data Minimization:** If using a public form, are names/emails visible to other attendees?\n*   **Consent:** Do guests need explicit consent for their data to be stored?\n*   **Retrieval:** How do attendees cancel? Email link? Phone call to society?\n\n## TESTABLE ACCEPTANCE CRITERIA (MVP)\n1.  **Signup:** A user can enter Name + Email and receive a confirmation.\n2.  **Capacity:** When 100 unique emails are registered, new signups go to a \"Waitlist\" status.\n3.  **Cancellation:** A user can click a link to remove themselves; their slot becomes available to the top waitlisted person.\n4.  **Guests:** A user can add up to [X] guests per signup. *(X is an Open Question)*\n5.  **Check-In:** Staff can view a list of \"Registered\" vs. \"Checked-In\" and mark individuals as present.\n\n## CONTRADICTIONS PRIORITY\n*   **Two days vs. Guest Logic:** If guest logic is complex (e.g., separate invitations per guest), it may exceed the 2-day build window. Recommend simplifying: *One form, user lists all names/emails in a single submission.*",
+      "at": "2026-10-30T09:38:19.716Z"
+    },
+    {
+      "id": "14317ad9-62b8-48be-8ba2-3efef6006315",
+      "stage": "draft",
+      "agentId": "architect",
+      "content": "# Technical Planner: Initial Draft\n\n## USER FACTS\n*   **Scope:** 100-person workshop, one-time event (next week).\n*   **Timeline:** 2 days for build/deploy.\n*   **Budget:** $0 (no paid SaaS).\n*   **Core Features:** Signup, Waitlist, Cancellations, Door Check-in.\n*   **Guest Policy:** Attendees may bring friends (counting toward capacity is **undecided**).\n*   **Auth Policy:** Account requirement is **undecided**.\n\n## PROPOSALS (Provisional)\n\n### 1. Architecture & Dependencies\n**Strategy:** Single-File Web App + Static Hosting.\nMinimize external integrations by avoiding complex databases or auth providers. Use a single JavaScript file that interacts with a free-tier backend or local storage if the event is fully offline-managed. Given the \"door check-in\" requirement, a shared state is necessary.\n\n*   **Frontend:** Vanilla HTML/CSS/JS (no React/Vue build step).\n*   **Backend:** **Firebase Firestore** (Free Spark plan) OR **Supabase** (Free tier). *Recommendation: Supabase for easier SQL-like querying and row-level security setup without complex client-side logic.*\n*   **Hosting:** GitHub Pages or Netlify (Free).\n*   **Dependencies:** Only the CDN link for the backend SDK. No `npm install`.\n\n### 2. MVP Scope\n1.  **Signup Form:** Name, Email, \"Number of Guests\" (0-3), Consent checkbox.\n2.  **Capacity Logic:** Hard cap at 100 total seats (attendees + guests).\n3.  **Waitlist:** If full, append to `waitlist` array.\n4.  **Check-in:** Admin view with a list of signed-up users. Tap to mark \"Checked In.\"\n5.  **Cancellation:** User can tap \"Cancel\" on their own registration (via link or unique ID).\n\n### 3. Implementation Steps (2-Day Plan)\n*   **Day 1 (AM):** Set up Supabase project. Create `registrations` table (id, name, email, guests, status, checked_in). Create `waitlist` table.\n*   **Day 1 (PM):** Build single `index.html`. Form posts to Supabase. Implement capacity check (query count where status='active').\n*   **Day 2 (AM):** Build \"Admin View\" (simple toggle via URL hash or secret input). List all active registrations. Add \"Check In\" button that updates `checked_in` boolean.\n*   **Day 2 (PM):** Test on mobile devices. Deploy to Netlify/GitHub Pages. Share link.\n\n### 4. Technical Risks\n1.  **Race Conditions:** Two people sign up simultaneously when 1 seat is left. *Mitigation:* Accept minor risk for MVP; or use Supabase Row Locks if time permits.\n2.  **Spam/No-shows:** No email verification. *Mitigation:* Ask for email; manually verify if capacity is tight.\n3.  **Guest Ambiguity:** If guests don't have individual records, check-in is hard (one tap for 3 people?). *Mitigation:* Treat \"Guests\" as a quantity field. Check-in marks the *primary* attendee as present, implying their guests are too.\n\n## OPEN QUESTIONS\n*(Must be resolved by user before finalizing logic)*\n\n1.  **Do guests count toward the 100-person capacity?**\n    *   *Provisional Recommendation:* Yes (simpler for venue liability).\n2.  **Are accounts required?**\n    *   *Provisional Recommendation:* No. Use Email + Name only. Accounts add friction and complexity.\n3.  **How are guests checked in?**\n    *   *Provisional Recommendation:* Primary attendee checks in for themselves + all listed guests.\n\n## ASSUMPTIONS\n*   All attendees have smartphones with internet access at the door.\n*   The organizer has access to a computer or phone to view the Admin Check-in list.\n*   \"No budget\" allows for free tiers of Supabase/Netlify (which require email verification).\n*   The event is in-person, not hybrid/virtual.",
+      "at": "2026-10-30T09:38:46.507Z"
+    },
+    {
+      "id": "5ce7270a-9236-4e30-b02e-09fd0ce390b3",
+      "stage": "review",
+      "agentId": "qa",
+      "content": "## Cross-Agent Review: Event Signup MVP\n\n### 1. Undecided Choices & Preservation Status\nThe user explicitly left two choices undecided: **(A) Guest Capacity Logic** and **(B) Account Requirements**.\n\n*   **Product Analyst:** Preserves both as Open Questions with provisional recommendations. **Status: OK.**\n*   **QA Critic:** Preserves both as Open Questions. **Status: OK.**\n*   **Technical Planner:** Preserves both as Open Questions. **Status: OK.**\n\n**Flag:** No draft *silently* decides these as confirmed requirements. However, **Technical Planner**’s \"Implementation Steps\" (Day 1 PM) says: *\"Implement capacity check (query count where status='active')\"*. This implies a specific technical implementation of the *undecided* logic before the user has confirmed if guests count. While labeled provisional elsewhere, the plan assumes the logic is settled for coding purposes.\n\n### 2. Conflicts & Unsupported Assumptions (Top 5)\n\n1.  **Conflict: Guest Identity vs. Check-In Mechanism**\n    *   **Cite:** Product Analyst says *\"Guests... do not need individual accounts.\"* Technical Planner says *\"Check-in marks the primary attendee as present, implying their guests are too.\"* QA Critic asks *\"Is the guest tied to the host’s slot?\"*\n    *   **Effect:** If guests are just a count (Analyst/Planner), the door staff cannot verify *who* the guests are. If a host brings 3 friends but one is a no-show, capacity is over-counted. If guests need names for check-in (QA’s concern), the \"count only\" proposal fails.\n    *   **PROPOSAL:** MVP must collect **Name + Email for every individual** (host and guests) in a single form submission to enable accurate check-in and cancellation. This resolves the \"identity\" ambiguity.\n\n2.  **Assumption: \"No Budget\" = Free Tier SaaS is Reliable**\n    *   **Cite:** All agents assume Firebase/Supabase/Netlify free tiers are acceptable.\n    *   **Effect:** Free tiers often have rate limits or require credit cards for verification (e.g., Supabase). If the user has *no* budget at all, even a $0-credit-card-required service might be a blocker.\n    *   **PROPOSAL:** Confirm if a free tier requiring a credit card for identity verification is acceptable, or if a self-hosted/static alternative is needed.\n\n3.  **Conflict: Waitlist Notification Method**\n    *   **Cite:** Product Analyst proposes *\"Manual notification by organizer\"* as provisional. Technical Planner implies automated logic (*\"append to waitlist array\"*). QA Critic asks *\"Does the waitlist auto-promote?\"*\n    *   **Effect:** If manual, the app needs a \"View Waitlist\" button for staff. If automated, it needs email integration (complexity). The 2-day budget favors manual, but the spec is unclear.\n    *   **PROPOSAL:** MVP should include a **\"Notify Next\" button** in the Admin Dashboard. Staff clicks it to manually email/call the top waitlisted person. This avoids email API complexity.\n\n4.  **Assumption: Mobile Internet at the Door**\n    *   **Cite:** Technical Planner assumes *\"All attendees have smartphones with internet access at the door.\"*\n    *   **Effect:** If the venue has poor Wi-Fi, a web-based check-in app might lag or fail. QA Critic mentions *\"phone is dead\"* as a failure case.\n    *   **PROPOSAL:** The Admin Check-In view must support **offline caching** or allow staff to mark people as \"Present\" locally and sync later. Alternatively, provide a printed list as a fallback.\n\n5.  **Privacy: Public Contact Disclosure**\n    *   **Cite:** Product Analyst says *\"Public form: Name, Email.\"*\n    *   **Effect:** If the form is public and data is stored in a simple DB, are names/emails visible to other attendees? The brief does not require public disclosure.\n    *   **PROPOSAL:** Ensure the **Admin List** is the only place where full names/emails are visible. The public form should only show a confirmation message to the user, not a public roster.\n\n### 3. Privacy & Ownership Checks\n*   **Privacy:** No draft mandates phone numbers. All use Email/Name. **OK.**\n*   **Ownership:** No draft names a specific human owner for disputes. All refer to \"Organizers\" or \"Staff.\" **Gap:** The brief mentions \"student society,\" but no specific contact person is defined for support issues.\n    *   **PROPOSAL:** Add a **\"Contact Us\" link** in the footer pointing to a society email address, but clarify that this is a *relay*, not an individual owner.\n\n### 4. Acceptance Checks\n1.  **Guest Data:** Does the form capture Name + Email for *each* guest, or just a count? (Must resolve Conflict #1).\n2.  **Waitlist Action:** Is there a UI button for staff to trigger waitlist notification? (Must resolve Conflict #3).\n3.  **Privacy View:** Can a regular attendee see other attendees' emails on the public page? (Must be No).\n4.  **Offline Fallback:** Is there a printed list or offline mode for check-in? (Must address Assumption #4).",
+      "at": "2026-10-30T09:39:22.864Z"
+    },
+    {
+      "id": "26322481-42bb-449b-9678-442e3170d8d4",
+      "stage": "final",
+      "agentId": "product",
+      "content": "# Event Signup MVP Specification\n\n## Goal and Users\n**Goal:** A zero-budget web app for a 100-person workshop to manage signups, waitlists, cancellations, and door check-in.\n**Users:**\n1.  **Attendees:** Students signing up for themselves and potentially friends.\n2.  **Organizers:** Society members managing the roster and checking people in at the door.\n\n## MVP Scope\n*   **Tech Stack (PROPOSED):** Single-page frontend (Vanilla JS/React) + Free-tier Backend (Supabase/Firebase). Hosted on Netlify/Vercel.\n*   **Data Model:** `Registration` (id, primary_name, primary_email, guest_names[], guest_emails[], status: active/waitlist/cancelled, checked_in: bool).\n*   **Features:**\n    *   **Signup Form:** Collects Primary Name/Email + up to 3 Guest Names/Emails. *Note: Collecting guest identity is PROPOSED to resolve check-in ambiguity; see Open Questions.*\n    *   **Capacity Logic:** Real-time count of `Active Registrations + Active Guests`.\n    *   **Waitlist:** If full, new entries status = `waitlist`. Admin view shows waitlist.\n    *   **Cancellation:** User clicks \"Cancel\" on their confirmation link. Status reverts to `cancelled`, freeing capacity.\n    *   **Check-In:** Admin dashboard lists active registrants. Staff taps \"Check In\" to toggle `checked_in`.\n    *   **Waitlist Action:** Admin \"Notify Next\" button (manual trigger) to highlight the top waitlisted person.\n\n## Non-Goals\n*   No user accounts/login systems.\n*   No automated email notifications (manual relay only).\n*   No payment processing.\n*   No native mobile apps.\n*   No complex role-based access control (single admin password/link).\n*   No public roster visibility to attendees.\n\n## User Journey\n1.  **Attendee:** Opens link → Enters Name/Email + Guest Details → Submits → Receives confirmation page with unique Cancel Link.\n2.  **Attendee (Cancel):** Clicks Cancel Link → Confirms → Status changes to `cancelled`.\n3.  **Organizer:** Opens Admin Link → Views Live Count & Roster → Searches Name → Taps \"Check In\". If full, views Waitlist and manually contacts the top person.\n\n## Architecture\n*   **Frontend:** Static HTML/JS hosted on free CDN.\n*   **Backend:** Serverless database (Supabase/Firebase) with Row Level Security (RLS).\n*   **Auth:** Simple email-based magic link or unique ID for cancellation; Admin password for dashboard.\n\n## Acceptance Criteria\n1.  **Given** a user submits a form, **When** capacity is not full, **Then** status is `active` and they receive a cancel link.\n2.  **Given** capacity is full, **When** a user submits, **Then** status is `waitlist`. *(Conditional on confirmation of whether guests count toward capacity)*\n3.  **Given** an active registration, **When** user clicks cancel, **Then** status becomes `cancelled` and capacity decreases.\n4.  **Given** the admin dashboard, **When** staff taps \"Check In\", **Then** the record is marked `checked_in` and visible to other organizers.\n5.  **Given** a public signup page, **When** a user views it, **Then** they do NOT see other attendees' emails/names (privacy).\n\n## Prioritized Implementation Checklist\n1.  Set up Supabase project & `registrations` table.\n2.  Build Signup Form (Primary + Guests).\n3.  Implement Capacity Check Logic.\n4.  Build Admin Dashboard (List, Search, Check-In Toggle).\n5.  Implement Cancellation Logic via unique link.\n6.  Add Waitlist View & \"Notify Next\" UI.\n7.  Deploy & Test on Mobile.\n\n## Decisions & Changes After Review\n*   **Guest Identity:** QA identified a conflict where \"guest count only\" failed check-in verification. **Change:** MVP now collects Name/Email for guests (PROPOSED) to allow accurate check-in, pending user confirmation if this adds too much friction.\n*   **Waitlist Notification:** QA noted ambiguity between auto-email and manual. **Change:** Specified a manual \"Notify Next\" button in Admin view to avoid email API costs/complexity.\n*   **Privacy:** QA flagged potential public exposure of data. **Change:** Explicitly non-goal: Public roster. Only Admin sees full list.\n*   **Ownership:** QA noted no specific human owner defined. **Change:** Added \"Contact Relay\" link in footer, but kept ownership as an Open Question.\n\n## Assumptions\n*   Free-tier services (Supabase/Netlify) are acceptable despite potential credit card verification requirements.\n*   Organizers have internet access at the door.\n*   \"100-person\" capacity includes guests (PROPOSED).\n\n## Open Questions\n1.  **Guest Capacity:** \"Whether guests count toward capacity... are undecided.\"\n    *   *Provisional:* Yes, each person counts as one slot.\n2.  **Account Requirements:** \"Whether... to require accounts are undecided.\"\n    *   *Provisional:* No accounts; use Email + Name only.\n3.  **Guest Identity:** Do guests need individual names/emails for check-in, or is a count sufficient?\n    *   *Provisional:* Individual names/emails required (per QA conflict resolution).\n4.  **Accountable Owner:** Who is the specific human responsible for support issues?\n    *   *Provisional:* Society email relay; no specific individual named.",
+      "at": "2026-10-30T09:40:03.137Z"
+    }
+  ],
+  "agents": [
+    {
+      "id": "product",
+      "name": "Product Analyst",
+      "status": "completed",
+      "output": "# Event Signup MVP Specification\n\n## Goal and Users\n**Goal:** A zero-budget web app for a 100-person workshop to manage signups, waitlists, cancellations, and door check-in.\n**Users:**\n1.  **Attendees:** Students signing up for themselves and potentially friends.\n2.  **Organizers:** Society members managing the roster and checking people in at the door.\n\n## MVP Scope\n*   **Tech Stack (PROPOSED):** Single-page frontend (Vanilla JS/React) + Free-tier Backend (Supabase/Firebase). Hosted on Netlify/Vercel.\n*   **Data Model:** `Registration` (id, primary_name, primary_email, guest_names[], guest_emails[], status: active/waitlist/cancelled, checked_in: bool).\n*   **Features:**\n    *   **Signup Form:** Collects Primary Name/Email + up to 3 Guest Names/Emails. *Note: Collecting guest identity is PROPOSED to resolve check-in ambiguity; see Open Questions.*\n    *   **Capacity Logic:** Real-time count of `Active Registrations + Active Guests`.\n    *   **Waitlist:** If full, new entries status = `waitlist`. Admin view shows waitlist.\n    *   **Cancellation:** User clicks \"Cancel\" on their confirmation link. Status reverts to `cancelled`, freeing capacity.\n    *   **Check-In:** Admin dashboard lists active registrants. Staff taps \"Check In\" to toggle `checked_in`.\n    *   **Waitlist Action:** Admin \"Notify Next\" button (manual trigger) to highlight the top waitlisted person.\n\n## Non-Goals\n*   No user accounts/login systems.\n*   No automated email notifications (manual relay only).\n*   No payment processing.\n*   No native mobile apps.\n*   No complex role-based access control (single admin password/link).\n*   No public roster visibility to attendees.\n\n## User Journey\n1.  **Attendee:** Opens link → Enters Name/Email + Guest Details → Submits → Receives confirmation page with unique Cancel Link.\n2.  **Attendee (Cancel):** Clicks Cancel Link → Confirms → Status changes to `cancelled`.\n3.  **Organizer:** Opens Admin Link → Views Live Count & Roster → Searches Name → Taps \"Check In\". If full, views Waitlist and manually contacts the top person.\n\n## Architecture\n*   **Frontend:** Static HTML/JS hosted on free CDN.\n*   **Backend:** Serverless database (Supabase/Firebase) with Row Level Security (RLS).\n*   **Auth:** Simple email-based magic link or unique ID for cancellation; Admin password for dashboard.\n\n## Acceptance Criteria\n1.  **Given** a user submits a form, **When** capacity is not full, **Then** status is `active` and they receive a cancel link.\n2.  **Given** capacity is full, **When** a user submits, **Then** status is `waitlist`. *(Conditional on confirmation of whether guests count toward capacity)*\n3.  **Given** an active registration, **When** user clicks cancel, **Then** status becomes `cancelled` and capacity decreases.\n4.  **Given** the admin dashboard, **When** staff taps \"Check In\", **Then** the record is marked `checked_in` and visible to other organizers.\n5.  **Given** a public signup page, **When** a user views it, **Then** they do NOT see other attendees' emails/names (privacy).\n\n## Prioritized Implementation Checklist\n1.  Set up Supabase project & `registrations` table.\n2.  Build Signup Form (Primary + Guests).\n3.  Implement Capacity Check Logic.\n4.  Build Admin Dashboard (List, Search, Check-In Toggle).\n5.  Implement Cancellation Logic via unique link.\n6.  Add Waitlist View & \"Notify Next\" UI.\n7.  Deploy & Test on Mobile.\n\n## Decisions & Changes After Review\n*   **Guest Identity:** QA identified a conflict where \"guest count only\" failed check-in verification. **Change:** MVP now collects Name/Email for guests (PROPOSED) to allow accurate check-in, pending user confirmation if this adds too much friction.\n*   **Waitlist Notification:** QA noted ambiguity between auto-email and manual. **Change:** Specified a manual \"Notify Next\" button in Admin view to avoid email API costs/complexity.\n*   **Privacy:** QA flagged potential public exposure of data. **Change:** Explicitly non-goal: Public roster. Only Admin sees full list.\n*   **Ownership:** QA noted no specific human owner defined. **Change:** Added \"Contact Relay\" link in footer, but kept ownership as an Open Question.\n\n## Assumptions\n*   Free-tier services (Supabase/Netlify) are acceptable despite potential credit card verification requirements.\n*   Organizers have internet access at the door.\n*   \"100-person\" capacity includes guests (PROPOSED).\n\n## Open Questions\n1.  **Guest Capacity:** \"Whether guests count toward capacity... are undecided.\"\n    *   *Provisional:* Yes, each person counts as one slot.\n2.  **Account Requirements:** \"Whether... to require accounts are undecided.\"\n    *   *Provisional:* No accounts; use Email + Name only.\n3.  **Guest Identity:** Do guests need individual names/emails for check-in, or is a count sufficient?\n    *   *Provisional:* Individual names/emails required (per QA conflict resolution).\n4.  **Accountable Owner:** Who is the specific human responsible for support issues?\n    *   *Provisional:* Society email relay; no specific individual named."
+    },
+    {
+      "id": "qa",
+      "name": "QA Critic",
+      "status": "completed",
+      "output": "## Cross-Agent Review: Event Signup MVP\n\n### 1. Undecided Choices & Preservation Status\nThe user explicitly left two choices undecided: **(A) Guest Capacity Logic** and **(B) Account Requirements**.\n\n*   **Product Analyst:** Preserves both as Open Questions with provisional recommendations. **Status: OK.**\n*   **QA Critic:** Preserves both as Open Questions. **Status: OK.**\n*   **Technical Planner:** Preserves both as Open Questions. **Status: OK.**\n\n**Flag:** No draft *silently* decides these as confirmed requirements. However, **Technical Planner**’s \"Implementation Steps\" (Day 1 PM) says: *\"Implement capacity check (query count where status='active')\"*. This implies a specific technical implementation of the *undecided* logic before the user has confirmed if guests count. While labeled provisional elsewhere, the plan assumes the logic is settled for coding purposes.\n\n### 2. Conflicts & Unsupported Assumptions (Top 5)\n\n1.  **Conflict: Guest Identity vs. Check-In Mechanism**\n    *   **Cite:** Product Analyst says *\"Guests... do not need individual accounts.\"* Technical Planner says *\"Check-in marks the primary attendee as present, implying their guests are too.\"* QA Critic asks *\"Is the guest tied to the host’s slot?\"*\n    *   **Effect:** If guests are just a count (Analyst/Planner), the door staff cannot verify *who* the guests are. If a host brings 3 friends but one is a no-show, capacity is over-counted. If guests need names for check-in (QA’s concern), the \"count only\" proposal fails.\n    *   **PROPOSAL:** MVP must collect **Name + Email for every individual** (host and guests) in a single form submission to enable accurate check-in and cancellation. This resolves the \"identity\" ambiguity.\n\n2.  **Assumption: \"No Budget\" = Free Tier SaaS is Reliable**\n    *   **Cite:** All agents assume Firebase/Supabase/Netlify free tiers are acceptable.\n    *   **Effect:** Free tiers often have rate limits or require credit cards for verification (e.g., Supabase). If the user has *no* budget at all, even a $0-credit-card-required service might be a blocker.\n    *   **PROPOSAL:** Confirm if a free tier requiring a credit card for identity verification is acceptable, or if a self-hosted/static alternative is needed.\n\n3.  **Conflict: Waitlist Notification Method**\n    *   **Cite:** Product Analyst proposes *\"Manual notification by organizer\"* as provisional. Technical Planner implies automated logic (*\"append to waitlist array\"*). QA Critic asks *\"Does the waitlist auto-promote?\"*\n    *   **Effect:** If manual, the app needs a \"View Waitlist\" button for staff. If automated, it needs email integration (complexity). The 2-day budget favors manual, but the spec is unclear.\n    *   **PROPOSAL:** MVP should include a **\"Notify Next\" button** in the Admin Dashboard. Staff clicks it to manually email/call the top waitlisted person. This avoids email API complexity.\n\n4.  **Assumption: Mobile Internet at the Door**\n    *   **Cite:** Technical Planner assumes *\"All attendees have smartphones with internet access at the door.\"*\n    *   **Effect:** If the venue has poor Wi-Fi, a web-based check-in app might lag or fail. QA Critic mentions *\"phone is dead\"* as a failure case.\n    *   **PROPOSAL:** The Admin Check-In view must support **offline caching** or allow staff to mark people as \"Present\" locally and sync later. Alternatively, provide a printed list as a fallback.\n\n5.  **Privacy: Public Contact Disclosure**\n    *   **Cite:** Product Analyst says *\"Public form: Name, Email.\"*\n    *   **Effect:** If the form is public and data is stored in a simple DB, are names/emails visible to other attendees? The brief does not require public disclosure.\n    *   **PROPOSAL:** Ensure the **Admin List** is the only place where full names/emails are visible. The public form should only show a confirmation message to the user, not a public roster.\n\n### 3. Privacy & Ownership Checks\n*   **Privacy:** No draft mandates phone numbers. All use Email/Name. **OK.**\n*   **Ownership:** No draft names a specific human owner for disputes. All refer to \"Organizers\" or \"Staff.\" **Gap:** The brief mentions \"student society,\" but no specific contact person is defined for support issues.\n    *   **PROPOSAL:** Add a **\"Contact Us\" link** in the footer pointing to a society email address, but clarify that this is a *relay*, not an individual owner.\n\n### 4. Acceptance Checks\n1.  **Guest Data:** Does the form capture Name + Email for *each* guest, or just a count? (Must resolve Conflict #1).\n2.  **Waitlist Action:** Is there a UI button for staff to trigger waitlist notification? (Must resolve Conflict #3).\n3.  **Privacy View:** Can a regular attendee see other attendees' emails on the public page? (Must be No).\n4.  **Offline Fallback:** Is there a printed list or offline mode for check-in? (Must address Assumption #4)."
+    },
+    {
+      "id": "architect",
+      "name": "Technical Planner",
+      "status": "completed",
+      "output": "# Technical Planner: Initial Draft\n\n## USER FACTS\n*   **Scope:** 100-person workshop, one-time event (next week).\n*   **Timeline:** 2 days for build/deploy.\n*   **Budget:** $0 (no paid SaaS).\n*   **Core Features:** Signup, Waitlist, Cancellations, Door Check-in.\n*   **Guest Policy:** Attendees may bring friends (counting toward capacity is **undecided**).\n*   **Auth Policy:** Account requirement is **undecided**.\n\n## PROPOSALS (Provisional)\n\n### 1. Architecture & Dependencies\n**Strategy:** Single-File Web App + Static Hosting.\nMinimize external integrations by avoiding complex databases or auth providers. Use a single JavaScript file that interacts with a free-tier backend or local storage if the event is fully offline-managed. Given the \"door check-in\" requirement, a shared state is necessary.\n\n*   **Frontend:** Vanilla HTML/CSS/JS (no React/Vue build step).\n*   **Backend:** **Firebase Firestore** (Free Spark plan) OR **Supabase** (Free tier). *Recommendation: Supabase for easier SQL-like querying and row-level security setup without complex client-side logic.*\n*   **Hosting:** GitHub Pages or Netlify (Free).\n*   **Dependencies:** Only the CDN link for the backend SDK. No `npm install`.\n\n### 2. MVP Scope\n1.  **Signup Form:** Name, Email, \"Number of Guests\" (0-3), Consent checkbox.\n2.  **Capacity Logic:** Hard cap at 100 total seats (attendees + guests).\n3.  **Waitlist:** If full, append to `waitlist` array.\n4.  **Check-in:** Admin view with a list of signed-up users. Tap to mark \"Checked In.\"\n5.  **Cancellation:** User can tap \"Cancel\" on their own registration (via link or unique ID).\n\n### 3. Implementation Steps (2-Day Plan)\n*   **Day 1 (AM):** Set up Supabase project. Create `registrations` table (id, name, email, guests, status, checked_in). Create `waitlist` table.\n*   **Day 1 (PM):** Build single `index.html`. Form posts to Supabase. Implement capacity check (query count where status='active').\n*   **Day 2 (AM):** Build \"Admin View\" (simple toggle via URL hash or secret input). List all active registrations. Add \"Check In\" button that updates `checked_in` boolean.\n*   **Day 2 (PM):** Test on mobile devices. Deploy to Netlify/GitHub Pages. Share link.\n\n### 4. Technical Risks\n1.  **Race Conditions:** Two people sign up simultaneously when 1 seat is left. *Mitigation:* Accept minor risk for MVP; or use Supabase Row Locks if time permits.\n2.  **Spam/No-shows:** No email verification. *Mitigation:* Ask for email; manually verify if capacity is tight.\n3.  **Guest Ambiguity:** If guests don't have individual records, check-in is hard (one tap for 3 people?). *Mitigation:* Treat \"Guests\" as a quantity field. Check-in marks the *primary* attendee as present, implying their guests are too.\n\n## OPEN QUESTIONS\n*(Must be resolved by user before finalizing logic)*\n\n1.  **Do guests count toward the 100-person capacity?**\n    *   *Provisional Recommendation:* Yes (simpler for venue liability).\n2.  **Are accounts required?**\n    *   *Provisional Recommendation:* No. Use Email + Name only. Accounts add friction and complexity.\n3.  **How are guests checked in?**\n    *   *Provisional Recommendation:* Primary attendee checks in for themselves + all listed guests.\n\n## ASSUMPTIONS\n*   All attendees have smartphones with internet access at the door.\n*   The organizer has access to a computer or phone to view the Admin Check-in list.\n*   \"No budget\" allows for free tiers of Supabase/Netlify (which require email verification).\n*   The event is in-person, not hybrid/virtual."
+    }
+  ],
+  "result": "# Event Signup MVP Specification\n\n## Goal and Users\n**Goal:** A zero-budget web app for a 100-person workshop to manage signups, waitlists, cancellations, and door check-in.\n**Users:**\n1.  **Attendees:** Students signing up for themselves and potentially friends.\n2.  **Organizers:** Society members managing the roster and checking people in at the door.\n\n## MVP Scope\n*   **Tech Stack (PROPOSED):** Single-page frontend (Vanilla JS/React) + Free-tier Backend (Supabase/Firebase). Hosted on Netlify/Vercel.\n*   **Data Model:** `Registration` (id, primary_name, primary_email, guest_names[], guest_emails[], status: active/waitlist/cancelled, checked_in: bool).\n*   **Features:**\n    *   **Signup Form:** Collects Primary Name/Email + up to 3 Guest Names/Emails. *Note: Collecting guest identity is PROPOSED to resolve check-in ambiguity; see Open Questions.*\n    *   **Capacity Logic:** Real-time count of `Active Registrations + Active Guests`.\n    *   **Waitlist:** If full, new entries status = `waitlist`. Admin view shows waitlist.\n    *   **Cancellation:** User clicks \"Cancel\" on their confirmation link. Status reverts to `cancelled`, freeing capacity.\n    *   **Check-In:** Admin dashboard lists active registrants. Staff taps \"Check In\" to toggle `checked_in`.\n    *   **Waitlist Action:** Admin \"Notify Next\" button (manual trigger) to highlight the top waitlisted person.\n\n## Non-Goals\n*   No user accounts/login systems.\n*   No automated email notifications (manual relay only).\n*   No payment processing.\n*   No native mobile apps.\n*   No complex role-based access control (single admin password/link).\n*   No public roster visibility to attendees.\n\n## User Journey\n1.  **Attendee:** Opens link → Enters Name/Email + Guest Details → Submits → Receives confirmation page with unique Cancel Link.\n2.  **Attendee (Cancel):** Clicks Cancel Link → Confirms → Status changes to `cancelled`.\n3.  **Organizer:** Opens Admin Link → Views Live Count & Roster → Searches Name → Taps \"Check In\". If full, views Waitlist and manually contacts the top person.\n\n## Architecture\n*   **Frontend:** Static HTML/JS hosted on free CDN.\n*   **Backend:** Serverless database (Supabase/Firebase) with Row Level Security (RLS).\n*   **Auth:** Simple email-based magic link or unique ID for cancellation; Admin password for dashboard.\n\n## Acceptance Criteria\n1.  **Given** a user submits a form, **When** capacity is not full, **Then** status is `active` and they receive a cancel link.\n2.  **Given** capacity is full, **When** a user submits, **Then** status is `waitlist`. *(Conditional on confirmation of whether guests count toward capacity)*\n3.  **Given** an active registration, **When** user clicks cancel, **Then** status becomes `cancelled` and capacity decreases.\n4.  **Given** the admin dashboard, **When** staff taps \"Check In\", **Then** the record is marked `checked_in` and visible to other organizers.\n5.  **Given** a public signup page, **When** a user views it, **Then** they do NOT see other attendees' emails/names (privacy).\n\n## Prioritized Implementation Checklist\n1.  Set up Supabase project & `registrations` table.\n2.  Build Signup Form (Primary + Guests).\n3.  Implement Capacity Check Logic.\n4.  Build Admin Dashboard (List, Search, Check-In Toggle).\n5.  Implement Cancellation Logic via unique link.\n6.  Add Waitlist View & \"Notify Next\" UI.\n7.  Deploy & Test on Mobile.\n\n## Decisions & Changes After Review\n*   **Guest Identity:** QA identified a conflict where \"guest count only\" failed check-in verification. **Change:** MVP now collects Name/Email for guests (PROPOSED) to allow accurate check-in, pending user confirmation if this adds too much friction.\n*   **Waitlist Notification:** QA noted ambiguity between auto-email and manual. **Change:** Specified a manual \"Notify Next\" button in Admin view to avoid email API costs/complexity.\n*   **Privacy:** QA flagged potential public exposure of data. **Change:** Explicitly non-goal: Public roster. Only Admin sees full list.\n*   **Ownership:** QA noted no specific human owner defined. **Change:** Added \"Contact Relay\" link in footer, but kept ownership as an Open Question.\n\n## Assumptions\n*   Free-tier services (Supabase/Netlify) are acceptable despite potential credit card verification requirements.\n*   Organizers have internet access at the door.\n*   \"100-person\" capacity includes guests (PROPOSED).\n\n## Open Questions\n1.  **Guest Capacity:** \"Whether guests count toward capacity... are undecided.\"\n    *   *Provisional:* Yes, each person counts as one slot.\n2.  **Account Requirements:** \"Whether... to require accounts are undecided.\"\n    *   *Provisional:* No accounts; use Email + Name only.\n3.  **Guest Identity:** Do guests need individual names/emails for check-in, or is a count sufficient?\n    *   *Provisional:* Individual names/emails required (per QA conflict resolution).\n4.  **Accountable Owner:** Who is the specific human responsible for support issues?\n    *   *Provisional:* Society email relay; no specific individual named.",
+  "completedAt": "2026-10-30T09:40:03.137Z"
+}
