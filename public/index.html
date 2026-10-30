@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f3ec">
+  <meta name="description" content="Turn an uncertain idea into a buildable MVP with a concurrent team of Mozaik agents.">
+  <title>Spec Rescue — From rough idea to ready to build</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#brief">Skip to brief</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Spec Rescue home"><span class="brand-mark" aria-hidden="true">✳</span> Spec Rescue<span class="brand-period">.</span></a>
+    <div class="runtime-label"><span class="connection-dot" id="connection-dot"></span><span id="connection-label">Connecting to Mozaik</span></div>
+    <span class="header-note">Three perspectives. One clear plan.</span>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow"><span class="tiny-square"></span> THE AI REQUIREMENTS RESCUE ROOM</p>
+        <h1 id="page-title">Rough idea.<br><span>Ready to build.</span></h1>
+      </div>
+      <div class="intro-copy"><p>A product analyst, a QA reviewer, and a technical architect work together to find the gaps in your idea — then turn it into a practical MVP specification.</p><p class="intro-caption">Powered by concurrent agents on Mozaik.</p></div>
+    </section>
+
+    <div class="notice" id="notice" role="status" aria-live="polite" hidden></div>
+
+    <div class="workspace">
+      <aside class="brief-panel" aria-labelledby="brief-heading">
+        <div class="panel-heading"><span class="step-label">01 / THE INPUT</span><span class="panel-tag">Start messy</span></div>
+        <h2 id="brief-heading">What are you building?</h2>
+        <p class="muted">Tell the team what you have in mind. Include who it is for, what it should do, and any constraints.</p>
+        <form id="brief-form">
+          <label class="sr-only" for="brief">Your product idea</label>
+          <textarea id="brief" name="brief" rows="11" maxlength="12000" required aria-describedby="brief-help char-count" spellcheck="true">I want to build a second-hand book exchange for university students. Students should list books, find books for their courses, and arrange a campus handover. We have two days to build an MVP. I'm not sure whether we need payments, chat, or student verification yet.</textarea>
+          <div class="input-footer"><span id="brief-help">An idea is enough to begin.</span><span id="char-count">0 / 12,000</span></div>
+          <fieldset class="examples"><legend>Or try a starting point</legend><div class="example-buttons"><button type="button" data-example="books" class="example-button selected">Book exchange <span aria-hidden="true">↗</span></button><button type="button" data-example="booking" class="example-button">Booking app <span aria-hidden="true">↗</span></button><button type="button" data-example="events" class="example-button">Event signup <span aria-hidden="true">↗</span></button></div></fieldset>
+          <button type="submit" class="launch-button" id="launch-button" disabled><span id="launch-label">Checking configuration…</span><span aria-hidden="true">↗</span></button>
+        </form>
+        <p class="privacy-note"><span aria-hidden="true">⌁</span> Your brief goes to this local server and its configured model provider. Keep secrets out of your brief.</p>
+        <div class="process-note"><span class="step-label">HOW THE RESCUE WORKS</span><ol><li><span>01</span> Three agents explore in parallel</li><li><span>02</span> QA challenges their assumptions</li><li><span>03</span> Product resolves the plan</li></ol></div>
+      </aside>
+
+      <section class="team-workspace" aria-labelledby="team-heading">
+        <div class="team-heading"><div><span class="step-label">02 / THE COLLABORATION</span><h2 id="team-heading">Your rescue team</h2></div><span class="phase-badge" id="phase-badge">Awaiting your brief</span></div>
+        <div class="agent-grid" id="agent-grid">
+          <article class="agent-card" data-agent="product"><div class="agent-top"><span class="agent-icon product-icon" aria-hidden="true">◈</span><span class="agent-status" data-status="idle">Ready</span></div><h3>Product analyst</h3><p>Protects the core experience.<br>Finds the smallest useful MVP.</p><details><summary>View agent work <span aria-hidden="true">↗</span></summary><div class="agent-output">The product perspective will appear here when the team starts.</div></details></article>
+          <article class="agent-card" data-agent="qa"><div class="agent-top"><span class="agent-icon qa-icon" aria-hidden="true">⌕</span><span class="agent-status" data-status="idle">Ready</span></div><h3>QA reviewer</h3><p>Questions the assumptions.<br>Makes success testable.</p><details><summary>View agent work <span aria-hidden="true">↗</span></summary><div class="agent-output">The QA perspective and review will appear here when the team starts.</div></details></article>
+          <article class="agent-card" data-agent="architect"><div class="agent-top"><span class="agent-icon architect-icon" aria-hidden="true">⌘</span><span class="agent-status" data-status="idle">Ready</span></div><h3>Technical architect</h3><p>Keeps the build realistic.<br>Surfaces technical tradeoffs.</p><details><summary>View agent work <span aria-hidden="true">↗</span></summary><div class="agent-output">The technical perspective will appear here when the team starts.</div></details></article>
+        </div>
+
+        <section class="result-panel" aria-labelledby="output-heading">
+          <div class="result-heading"><div><span class="step-label">03 / THE OUTCOME</span><h2 id="output-heading">The buildable brief</h2></div><button id="download-button" class="text-button" type="button" disabled>Download .md <span aria-hidden="true">↓</span></button></div>
+          <div id="result-empty" class="result-empty"><div class="document-art" aria-hidden="true"><span>SPEC / 001</span><i></i><i></i><i></i><b>↗</b></div><div><h3>Clarity is the deliverable.</h3><p>Your final specification will land here: MVP scope, open questions, acceptance criteria, and an actionable build plan.</p><span class="empty-caption">Real agent output. One bounded review cycle.</span></div></div>
+          <div id="result-content" class="markdown-output" hidden></div>
+          <div class="result-error" id="result-error" role="alert" hidden></div>
+        </section>
+
+        <section class="timeline-panel" aria-labelledby="timeline-heading"><div class="timeline-heading"><div><span class="step-label">THE AUDIT TRAIL</span><h2 id="timeline-heading">Work, in the open.</h2></div><button type="button" class="text-button" id="trace-button" disabled>Export trace <span aria-hidden="true">↓</span></button></div><p id="timeline-empty" class="muted">The live event log will show when agents start, share findings, and revise the plan.</p><ol id="timeline" class="timeline" aria-label="Agent event timeline"></ol><p id="stream-status" class="stream-status" aria-live="polite">No run started.</p></section>
+      </section>
+    </div>
+  </main>
+  <footer><span>SPEC RESCUE <span class="footer-cross" aria-hidden="true">✳</span> BUILT WITH MOZAIK</span><span>Less ambiguity. More building.</span></footer>
+</body>
+</html>
